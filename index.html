@@ -107,7 +107,8 @@
     });
 
     function loadOrders() {
-      const ordersContainer = document.getElementById('orders-container');
+       const ordersContainer = document.getElementById('orders-container');
+    let ordersHtml = 'https://danosdigital.github.io/cous/';
 
       database.ref('orders').orderByChild('timestamp').once('value')
         .then(snapshot => {
